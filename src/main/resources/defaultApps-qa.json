@@ -1,0 +1,28 @@
+[
+  {
+    "appName": "/ocs-api/courseware",
+    "type": "up",
+    "memPercent": 70,
+    "cpuTime": 70,
+    "triggerMode": "or",
+    "scaleMultiplier": 1.5,
+    "instances": 20,
+    "strategy": [
+      "replay",
+      "20"
+    ]
+  },
+  {
+    "appName": "/ocs-api/courseware",
+    "type": "down",
+    "memPercent": 50,
+    "cpuTime": 30,
+    "triggerMode": "and",
+    "scaleMultiplier": 1.5,
+    "instances": 2,
+    "strategy": [
+      "fixed",
+      "02:00"
+    ]
+  }
+]
