@@ -18,7 +18,7 @@ import java.util.Map;
 public class MarathonUtil {
     private static MarathonUtil INSTANCE = new MarathonUtil();
 
-    private String marathonHost = "http://192.168.36.202:8080";
+    private String marathonHost = "http://0.0.0.0:8080";
 
     private MarathonUtil(){
 
