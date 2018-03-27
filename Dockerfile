@@ -5,11 +5,11 @@ RUN apk --update add --no-cache tzdata
 ENV TZ=Asia/Shanghai
 
 RUN mkdir -p /app/log
-COPY  autoscale-java.jar  /app/autoscale-java.jar
+COPY  target/auto-scale-java.jar  /app/auto-scale-java.jar
 
 EXPOSE 9050
 VOLUME ["/app/log"]
 WORKDIR /app/
 
-ENTRYPOINT ["java","-jar","autoscale-java.jar"]
+ENTRYPOINT ["java","-jar","auto-scale-java.jar"]
 CMD []
