@@ -1,8 +1,8 @@
 package com.hujiang.autoscale.services;
 
+import com.hujiang.autoscale.pojo.Config;
 import com.hujiang.autoscale.utils.MarathonUtil;
 import com.hujiang.autoscale.utils.MesosUtil;
-import com.hujiang.autoscale.pojo.Config;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;

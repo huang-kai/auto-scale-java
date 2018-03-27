@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import lombok.extern.slf4j.Slf4j;
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.IOException;
 import java.util.List;
@@ -18,7 +19,10 @@ import java.util.Map;
 public class MarathonUtil {
     private static MarathonUtil INSTANCE = new MarathonUtil();
 
-    private String marathonHost = "http://0.0.0.0:8080";
+//    private String marathonHost = "http://0.0.0.0:8080";
+
+    @Value("${marathon.url}")
+    private String marathonHost;
 
     private MarathonUtil(){
 

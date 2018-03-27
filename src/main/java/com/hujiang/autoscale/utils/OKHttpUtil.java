@@ -96,7 +96,7 @@ public class OKHttpUtil {
 
 @Slf4j
 class RetryInterceptor implements Interceptor {
-    @Override public Response intercept(Interceptor.Chain chain) throws IOException {
+    @Override public Response intercept(Chain chain) throws IOException {
         int retryTime = 0;
         while (retryTime<=3){
             if (retryTime>0){
